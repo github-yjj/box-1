@@ -1,0 +1,185 @@
+
+// ================main start===============
+.main{
+	width: 100%;
+	height: 600px;
+	.main_container{
+		padding-top: 30px;
+		width: 1000px;
+		margin: 0 auto;
+		position: relative;
+		.main_left{
+			width: 480px;
+			float: left;
+			position: relative;
+			.big_box1{
+				width: 450px;
+				height: 318px;
+				position: absolute;
+				top: 0px;
+				left: 490px;
+				border: 1px solid #222;
+				overflow: hidden;
+				display: none;
+				z-index: 10;
+				img{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 900px;
+					height: 636px;
+				}
+			}
+			.left_box1{
+				width: 480px;
+				height: 320px;
+				overflow: hidden;
+				position: relative;
+				.mask{
+					width: 100px;
+					height: 100px;
+					background-color: rgba(255,255,0,.4);
+					position: absolute;
+					top: 0;
+					left: 0;
+					cursor: move;
+					display: none;
+				}
+				img{
+					width: 480px;
+					height: 320px;
+					display: block;
+				}
+				
+			}
+			.left_box2{
+				width: 490px;
+				height: 77px;
+				margin-top: 10px;
+				.box2_img{
+					float: left;
+					border: 2px solid #FFF;
+					margin-right: 8px;
+					cursor: pointer;
+					&:hover{
+						border: 2px solid red;
+
+					}
+					img{
+						width: 110px;
+						height: 73px;
+						display: block;
+					}
+				}
+			}
+		}
+		.main_right{
+			width: 490px;
+			margin-left: 30px;
+			color: #666;
+			font-size: 12px;
+			float: left;
+			word-break: break-all;
+			word-wrap: break-word;
+			.title{
+				font-size: 20px;
+				color: #333;
+				line-height: 29px;
+			}
+			.tip4{
+				margin-top: 10px;
+				font-size: 14px;
+				color: #6f7378;
+			}
+			.tip1{
+				background: #f6f6f6;
+				padding: 20px 0px 6px 30px;
+				height: 90px;
+				width: 100%;
+				margin-top: 15px;
+				box-sizing: border-box;
+				.pri{
+					display: inline-block;
+					padding-bottom: 10px;
+					position: relative;
+					top: -10px;
+					color: #333;
+				}
+				.pri2{
+					font-style: normal;
+					font-variant: normal;
+					font-family: helvetica;
+					margin-left: 20px;
+				}
+				.pri3{
+					position: relative;
+					top: -10px;
+					color: #333;
+				}
+				.pri4{
+					font-size: 30px;
+					color: #ec3d42;
+					font-weight: bold;
+					position: relative;
+					top: -5px;
+					margin-left: 10px; 
+				}
+				.pri5{
+					color: #ec3d42;
+					position: relative;
+					top: -10px;
+				}
+			}
+			.tip2{
+				height: 40px;
+				line-height: 40px;
+				color: #333;
+				margin-left: 10px;
+				.t8{
+					margin-left: 10px;
+				}
+			}
+			.tip3{
+				margin-top: 15px;
+				.tip3_btn{
+					width: 200px;
+					height: 50px;
+					text-align: center;
+					line-height: 50px;
+					font-size: 20px;
+					color: #fff;
+					margin-top: 10px;
+					margin-left: 75px;
+					border-radius: 2px;
+					background: #ec3d42;
+					cursor: pointer;
+					border: none;
+					&:hover{
+						opacity: .5;
+						transition: color 0.1s;
+						cursor: pointer;
+					}
+				}
+			}
+			.shop_chengnuo{
+				font-size: 12px;
+				padding: 16px 0 10px 10px;
+				color: #6f7378;
+			}
+			.shop_youshi{
+			    padding-left: 10px;
+				padding-top: 16px;
+				padding-bottom: 16px;
+				color: #6d7378;
+			}
+		}
+	}
+		
+	
+}
+
+
+
+
+
+

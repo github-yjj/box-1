@@ -1,0 +1,112 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper {
+    width: 993px;
+	margin-left: 10px;
+    font-size: 0;
+	float: left;
+}
+.box {
+    position: relative;
+    width: 993px;
+    height: 427px;
+    overflow: hidden;
+}
+.box .img-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3972px;
+    height: 427px;
+}
+.box .img-list li {
+    display: inline-block;
+    width: 993px;
+    height: 427px;
+}
+.box .img-list img {
+    width: 993px;
+}
+.wrapper .box span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    line-height: 47px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    z-index: 999;
+    user-select: none;
+	display: none;
+}
+.wrapper .box:hover span{
+	display: block;
+}
+.wrapper .box .left {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.wrapper .box .right {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+.box .dot {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.dot .dot-list {
+    display: inline-block;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
+}
+.dot-list .item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 2px;
+    cursor: pointer;
+}
+.dot-list .active {
+    background-color: #ff6700;
+}
+
+
+/* 百度搜索css */
+.search_center{
+	position: relative;
+}
+#list a{
+	text-decoration: none;
+	color: #222;
+	cursor: pointer;
+} 
+#list li{
+	margin-top: 5px;
+}
+#list li:hover{
+	background-color: #ddd;
+}
+#list{
+	position: absolute;
+	top: 51px;
+	left: -1px;
+	border: 1px solid #ddd;
+	border-top:0 ;
+	width: 446px;
+	padding: 2px;
+	display: none;
+	z-index: 10;
+	background-color: #fff;
+}

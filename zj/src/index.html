@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>斯沃商城</title>
+	<link rel="stylesheet" type="text/css" href="front/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="front/css/index_style.css"/>
+	<link rel="stylesheet" type="text/css" href="front/css/lunbo_style.css"/>
+</head>
+<body>
+	<!-- header start -->
+	<header>
+		<div class="header_container clearfix">
+			<div class="header_left">
+				<img src="https://img.haval.com.cn/otherimg/static/common/map-location.png" >
+				<a href="javascript:;">上海市</a>
+			</div>
+			<div class="header_right">
+				<ul>
+					<li><a href="./front/pages/login.html" id="presonalUser">您好，请登录</a><span>|</span></li>
+					<li><a href="./front/pages/register.html" id="cancellation">免费注册</a><span>|</span></li>
+					<li><a href="javascript:;">我的订单</a><span>|</span></li>
+					<li><a href="javascript:;">帮助中心</a><span>|</span></li>
+					<li><img src="../sucai/header_2.png" ><a href="javascript:;">手机商城</a></li>
+				</ul>
+			</div>
+			<div class="header_img">
+				<img src="https://img.haval.com.cn/otherimg/static/common/qrcode-app.png?v=3" >
+			</div>
+		</div>
+	</header>
+
+	<!-- search start -->
+	<div class="search clearfix">
+		<div class="search_container">
+			<div class="search_left">
+				<div class="left_img">
+					<img src="../sucai/logo.png" >
+					<img src="../sucai/400hotline.png" >
+				</div>
+				<div class="left_p">
+					客户最值得信赖的汽车生活服务平台
+				</div>
+			</div>
+			<div class="search_center">
+				<input type="text" name="q" id="q" placeholder="搜索您需要的商品" />
+				<div id="btn"><img src="https://img.haval.com.cn/otherimg/static/common/icon-search.png?v12" ></div>
+				<ul id="list"></ul> 
+			</div>
+			<div class="search_right">
+				<span class="search_span">
+					<img src="https://img.haval.com.cn/otherimg/static/common/cart-s-gray.png?v12" >
+					<a href="front/pages/shop_car.html">我的购物车</a>
+					<div class="right_num">0</div>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- nav start -->
+	<div class="nav">
+		<div class="nav_container clearfix">
+			<ul>
+				<li><a href="javascript:;">首页</a></li>
+				<li><a href="front/pages/car_list.html">车抢购</a></li>
+				<li><a href="front/pages/active.html">限时秒杀</a></li>
+				<li><a href="javascript:;">车延保</a></li>
+				<li><a href="javascript:;">车联网</a></li>
+				<li>
+					<a href="javascript:;">购车工具</a>
+					<ul>
+						<li><a href="javascript:;">经销商查询</a></li>
+						<li><a href="javascript:;">服务商查询</a></li>
+						<li><a href="javascript:;">预约试驾</a></li>
+						<li><a href="javascript:;">购车计算器</a></li>
+						<li><a href="javascript:;">贷款购车</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">车互动</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- banner start -->
+	<div class="banner">
+		<div class="banner_container">
+			<div class="banner_1 clearfix">
+				<div class="banner_1left">
+					<ul class="banner_1left_ul">
+						<li>
+							<a href="javascript:;">全部整车
+							<span>></span></a>
+							<div class="banner_ulitem clearfix" id="banner_item">
+								<!-- <div class="ulitem_1">
+									<img src="../sucai/logo.png" >
+								</div> -->
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">严选车品
+							<span>></span></a>
+						</li>
+						<li>
+							<a href="javascript:;">车辆延保
+							<span>></span></a>
+							<div class="banner_ulitem" id="banner_item2"></div>
+						</li>
+						<li>
+							<a href="javascript:;">斯沃互联
+							<span>></span></a>
+							<div class="banner_ulitem" id="banner_item3"></div>
+						</li>
+					</ul>
+					<div class="banner_1left_item">
+						<div class="banner_1left_item1 clearfix">
+							<div class="banner_1left_item11">
+								<a href="javascript:;">
+									<img src="https://img.haval.com.cn/otherimg/static/index/1-1.png" >
+									<span>服务商查询</span>
+								</a>
+							</div>
+							<div class="banner_1left_item12"></div>
+							<div class="banner_1left_item11">
+								<a href="javascript:;">
+									<img src="https://img.haval.com.cn/otherimg/static/index/1-1.png" >
+									<span>预约试驾</span>
+								</a>
+							</div>
+						</div>
+						<div class="banner_1left_item2 clearfix">
+							<div class="banner_1left_item21"></div>
+							<div class="banner_1left_item21"></div>
+						</div>
+						<div class="banner_1left_item3">
+							<div class="banner_1left_item31">
+								<a href="javascript:;">
+									<img src="https://img.haval.com.cn/otherimg/static/index/1-1.png" >
+									<span>经销商查询</span>
+								</a>
+							</div>
+							<div class="banner_1left_item32"></div>
+							<div class="banner_1left_item31">
+								<a href="javascript:;">
+									<img src="https://img.haval.com.cn/otherimg/static/index/1-1.png" >
+									<span>购车计算器</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 轮播图 -->
+				<div class="wrapper">
+					 <div class="box">
+					    <span class="left">&lt;</span>
+					    <span class="right">&gt;</span>
+					    <ul class="img-list">
+					        <li>
+					            <a href="javascript:;">
+					                <img src="https://img.haval.com.cn/otherimg/lbggw/2019/06/09/08/1560039177115.jpg" alt="">
+					            </a>
+					        </li>
+					        <li>
+					            <a href="javascript:;">
+					                <img src="https://img.haval.com.cn/otherimg/lbggw/2019/06/09/08/1560039177115.jpg" alt="">
+					            </a>
+					        </li>
+					        <li>
+					            <a href="javascript:;">
+					                <img src="https://img.haval.com.cn/otherimg/lbggw/2018/02/02/10/1517539495548.jpg" alt="">
+					            </a>
+					        </li>
+					        <li>
+					            <a href="javascript:;">
+					                <img src="https://img.haval.com.cn/otherimg/lbggw/2019/06/09/08/1560039177115.jpg" alt="">
+					            </a>
+					        </li>
+					    </ul>
+					    <div class="dot">
+					        <ul class="dot-list">
+					            <li class="item active"></li>
+					            <li class="item"></li>
+					            <li class="item"></li>
+					        </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="banner_2">
+				<a href="javascript:;">
+					<img src="https://img.haval.com.cn/otherimg/lbggw/2019/05/11/17/1557566529748.jpg" >
+				</a>
+				<a href="javascript:;">
+					<img src="https://img.haval.com.cn/otherimg/lbggw/2019/05/11/17/1557566569640.jpg" >
+				</a>
+				<a href="javascript:;">
+					<img src="https://img.haval.com.cn/otherimg/lbggw/2019/05/09/16/1557389277721.jpg" >
+				</a>
+				<a href="javascript:;">
+					<img src="https://img.haval.com.cn/otherimg/lbggw/2019/05/11/17/1557566579080.jpg" >
+				</a>
+			</div>
+		</div>
+	</div> 		
+
+	<!-- main  start -->
+	<div class="main">
+		<div class="main_container">
+			<!-- 车抢购 --> 
+			<div class="main_item1">
+				<div class="main_h clearfix">
+					<div class="main_h_left">
+						<h1>车抢购</h1>
+						<span>热销好车，任君选购</span>
+					</div>
+					<div class="main_h_right">
+						<span id="main_remen">热门</span>
+						<span id="main_youhui">优惠</span>
+					</div> 
+					<div class="main-h-right">
+						<span>车享购</span>
+					</div>
+				</div>
+				<div class="main_content clearfix">
+					<div class="content_left">
+						<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/08/08/1552005069535.png" >
+					</div>
+					<!-- 优惠 -->
+					<div class="content_right" id="content_y">
+					
+					</div>
+					<!--热门  -->
+					<div class="content_right" id="content_i">
+					
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		
+			<!-- 安心换 -->
+						<div class="main_item1">
+							<div class="main_h clearfix">
+								<div class="main_h_left">
+									<h1>安心换</h1>
+									<span>卓越品质，值得信赖</span>
+								</div>
+							</div>
+							<div class="main_item2_content ">
+								<img src="https://img.haval.com.cn/otherimg/lbggw/2018/02/27/11/1519701659444.jpg" >
+							</div>
+						</div>
+							
+						<!-- 车享用 -->
+						<div class="main_item1">
+							<div class="main_h clearfix">
+								<div class="main_h_left">
+									<h1>车享用</h1>
+									<span>爱斯沃，享生活</span>
+								</div>
+								<div class="main_h_right">
+									<span>热门</span>
+								</div>
+							</div>
+							<div class="main_content clearfix">
+								<div class="content_left">
+									<img src="https://img.haval.com.cn/otherimg/lbggw/2019/04/13/10/1555121619566.jpg" >
+								</div>
+								<div class="content_right">
+							
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+									
+					
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+							
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+									
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+							
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+			
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+							
+									<div class="content_item">
+										<div class="item1">
+											<img src="https://img.haval.com.cn/otherimg/lbggw/2019/03/07/19/1551958524491.jpg" >
+										</div>
+										<div class="item2">
+											<h1>1:43哈弗H7红标回力车模棕色</h4>
+											<h2>￥65.00</h6>
+											<div class="item2_s1">
+												<span style="color: red;">113</span>
+												<span>人购买</span>
+											</div>
+										</div>
+									</div>
+									
+								
+									<div class="content_item_other">
+										<div class="item_other1">
+											<a href="javascrpt:;">
+												<div class="other_p">
+													<p class="other_p1">18款H6</p>
+													<p class="other_p2">运动版</p>
+												</div>
+												<div class="other_img">
+													<img src="https://img.haval.com.cn/otherimg/lbggw/2019/05/11/09/1557539390437.jpg" >
+												</div>
+											</a>
+										</div>
+										<div class="item_other2">
+											<a href="javascript:;">
+												<div class="other_p">
+													<p class="other_p1">更多车型</p>
+													<p class="other_p2">优惠</p>
+												</div>
+												<div class="other_img">
+													<img src="https://img.haval.com.cn/otherimg/static/index/nav-left-2.png?v12" >
+												</div>
+											</a>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+		
+			<!-- 车评价 -->
+			<div class="main_item1">
+				<div class="main_h clearfix">
+					<div class="main_h_left">
+						<h1>车评价</h1>
+						<span>给你最真实的用车感受</span>
+					</div>
+					<div class="main_h_right">
+						<span>查看全部</span>
+					</div>
+				</div>
+				<div class="main_content clearfix">
+					<div class="content_left">
+						<img src="https://img.haval.com.cn/otherimg/lbggw/2018/02/25/14/1519540103863.jpg" style="width: 237px;height: 357px;">
+					</div>
+					<div class="car_right">
+						<!-- content1 -->
+						<div class="car_item" style="border-bottom:1px solid orangered;">
+							<div class="item1">
+								<img src="https://img.haval.com.cn/otherimg/shareorder/2015/09/04/20/1441369577952.png" >
+							</div>
+							<div class="item2">
+								<span>来自&nbsp;casparsong&nbsp;的晒单</span>
+								<h1>哈弗H6 Coupe两驱6DCT尊贵型,外观极地白，内饰全黑</h4>
+								<p>1.油耗出发里程应该是3792KM,记得出发的时候手机拍了照片，可是不知怎么的回来找不到了。回来的时候是8292KM，也就跑了4500KM的样子，就算记错了也差不了好多， 油钱一共 …</p>
+								<div class="car_span" >6&nbsp;<span>人关注</span></div>
+							</div>
+						</div>
+						
+						<!-- content1 -->
+						<div class="car_item" style="border-bottom:1px solid green;">
+							<div class="item1">
+								<img src="https://img.haval.com.cn/otherimg/shareorder/2015/09/04/20/1441369577952.png" >
+							</div>
+							<div class="item2">
+								<span>来自&nbsp;casparsong&nbsp;的晒单</span>
+								<h1>哈弗H6 Coupe两驱6DCT尊贵型,外观极地白，内饰全黑</h4>
+								<p>1.油耗出发里程应该是3792KM,记得出发的时候手机拍了照片，可是不知怎么的回来找不到了。回来的时候是8292KM，也就跑了4500KM的样子，就算记错了也差不了好多， 油钱一共 …</p>
+								<div class="car_span" >6&nbsp;<span>人关注</span></div>
+							</div>
+						</div>
+						
+						<!-- content1 -->
+						<div class="car_item" style="border-bottom:1px solid blue;">
+							<div class="item1">
+								<img src="https://img.haval.com.cn/otherimg/shareorder/2015/09/04/20/1441369577952.png" >
+							</div>
+							<div class="item2">
+								<span>来自&nbsp;casparsong&nbsp;的晒单</span>
+								<h1>哈弗H6 Coupe两驱6DCT尊贵型,外观极地白，内饰全黑</h4>
+								<p>1.油耗出发里程应该是3792KM,记得出发的时候手机拍了照片，可是不知怎么的回来找不到了。回来的时候是8292KM，也就跑了4500KM的样子，就算记错了也差不了好多， 油钱一共 …</p>
+								<div class="car_span" >6&nbsp;<span>人关注</span></div>
+							</div>
+						</div>
+						
+						<!-- content1 -->
+						<div class="car_item" style="border-bottom:1px solid gold;">
+							<div class="item1">
+								<img src="https://img.haval.com.cn/otherimg/shareorder/2015/09/04/20/1441369577952.png" >
+							</div>
+							<div class="item2">
+								<span>来自&nbsp;casparsong&nbsp;的晒单</span>
+								<h1>哈弗H6 Coupe两驱6DCT尊贵型,外观极地白，内饰全黑</h4>
+								<p>1.油耗出发里程应该是3792KM,记得出发的时候手机拍了照片，可是不知怎么的回来找不到了。回来的时候是8292KM，也就跑了4500KM的样子，就算记错了也差不了好多， 油钱一共 …</p>
+								<div class="car_span" >6&nbsp;<span>人关注</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 空白 -->
+			<div class="main_kongbai"></div>
+		</div>
+	</div>
+
+	<!-- footer start -->
+	<div class="footer">
+		<div class="footer_container">
+			<div class="foot1">
+				<!-- item -->
+				<div class="foot1_item">
+					<img src="../sucai/footer1.png" >
+					<div class="foot1_p">
+						<p>品质保证</p>
+						<span>品质护航，购物无忧</span>
+					</div>
+				</div>
+			
+				<div class="foot1_item">
+					<img src="../sucai/footer1.png" >
+					<div class="foot1_p">
+						<p>品质保证</p>
+						<span>品质护航，购物无忧</span>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="foot1_item">
+					<img src="../sucai/footer1.png" >
+					<div class="foot1_p">
+						<p>品质保证</p>
+						<span>品质护航，购物无忧</span>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="foot1_item">
+					<img src="../sucai/footer1.png" >
+					<div class="foot1_p">
+						<p>品质保证</p>
+						<span>品质护航，购物无忧</span>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="foot1_item">
+					<img src="../sucai/footer1.png" >
+					<div class="foot1_p">
+						<p>品质保证</p>
+						<span>品质护航，购物无忧</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer2 start -->
+	<div class="footer2">
+		<div class="footer2_container clearfix">
+			<div class="footer2_item1">
+				<dl>
+					<dt>商城车型</dt>
+					<dd class="dd_left">
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+					</dd>
+					<dd class="dd_right">
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+						<div class="dd_1"><a href="javascript:;">斯沃H2</a></div>
+					</dd>
+				</dl>
+				
+			</div>
+			<div class="footer2_item2">
+				<dl>
+					<dt>精品配件</dt>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+				</dl>
+				<dl>
+					<dt>购车工具</dt>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+				</dl>
+				<dl>
+					<dt>互动专区</dt>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+				</dl>
+				<dl>
+					<dt>帮助中心</dt>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+					<dd><a href="javascrpt:;">直邮精品</a></dd>
+				</dl>
+			</div>
+			<div class="footer2_item3">
+				<p>微信公众号</p>
+				<img src="../sucai/footer2.png" >
+				<div class="footer2_p">
+					扫描二维码关注哈弗商城微信，劲爆活动等你参与！
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer3 start -->
+	<div class="footer3">
+		<div class="footer3_container">
+			<div class="footer3_s">
+				<a href="javascript:;">斯沃官网</a>
+				<span>|</span>
+				<a href="javascript:;">斯沃社区</a>
+				<span>|</span>
+				<a href="javascript:;">车联网</a>
+			</div>
+			<p>Copyright©2019 Great Wall Motor. All rights reserved | 冀ICP备 05008632 | 增值电信业务经营许可证：冀B2-20150037</p>
+		</div>
+	</div>
+
+</body>
+<script src="front/js/jquery-3.0.0.js"></script>
+<script src="front/js/lunbo.js"></script>
+<script src="front/js/cookie.js"></script>
+<script src="front/js/index.js"></script>	
+<script>
+	let mM =new moveMap(993,3);
+	mM.init();
+	
+
+	var go_num = parseInt(getCookie("id_num"));
+	console.log(go_num)
+	$('.right_num').text(go_num);
+</script>
+</html>
